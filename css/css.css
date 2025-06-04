@@ -8,7 +8,8 @@
        <a href="./careers.html"><i class="fa fa-briefcase"></i> Careers</a>
       <a href="./Aboutus.html"><i class="fa fa-info-circle"></i> About Us</a>
       <a href="./Pastsites.html"><i class="fa fa-history"></i> Past Sites</a>*/
-* {
+* 
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -430,4 +431,82 @@ button[type="submit"]:hover {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+
+ /* Header adjustments */
+ .header {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+ }
+
+ .header-left h1 {
+  font-size: 24px;
+ }
+
+ .header-right {
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
+ }
+
+ /* Main intro text */
+ .intro h1, .info h1, .designProcess h1, .OurServices h1, .services h1, .about-main h1 {
+  font-size: 24px;
+  text-align: center;
+ }
+
+ .intro p, .info li, .designProcess p, .OurServices p, .OurServices li, .skills li, .about-main p {
+  font-size: 14px;
+  padding: 10px;
+ }
+
+ /* Contact section */
+ .contact-box {
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .input-row {
+  flex-direction: column;
+  gap: 10px;
+ }
+
+ .container {
+  padding: 20px;
+  margin: 20px 10px;
+ }
+
+ /* Footer layout */
+ footer {
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+ }
+
+ .footer-content {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ /* Service cards grid layout */
+ .service-grid {
+  grid-template-columns: 1fr;
+  padding: 10px;
+ }
+
+ .card {
+  padding: 15px;
+  font-size: 14px;
+ }
+
+ /* Buttons */
+ button[type="submit"],
+ .whyUs .btn,
+ .contact button {
+  font-size: 14px;
+  padding: 10px 15px;
+ }
+
 }
