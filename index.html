@@ -1,180 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-adsense-account" content="ca-pub-5513403172855710" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="google-adsense-account" content="ca-pub-5513403172855710">
-  <!-- SEO Meta Tags -->
-  <title>Home | MK71 DEVELOPMENT | Web Design & Development Services</title>
-  <meta name="description" content="MK71 DEVELOPMENT offers modern, user-friendly web solutions including design, development, SEO, and more. Let's bring your digital vision to life." />
-  <meta name="keywords" content="web development, web design, SEO services, e-commerce, branding, MK71 DEVELOPMENT, website support, digital solutions" />
-  <meta name="author" content="MK71 DEVELOPMENT" />
+    <title>Home | MK71 DEVELOPMENT | Web Design & Development Services</title>
+    <meta
+      name="description"
+      content="MK71 DEVELOPMENT offers modern, user-friendly web solutions including design, development, SEO, and more. Let's bring your digital vision to life."
+    />
+    <meta
+      name="keywords"
+      content="web development, web design, SEO services, e-commerce, branding, MK71 DEVELOPMENT, website support, digital solutions"
+    />
+    <meta name="author" content="MK71 DEVELOPMENT" />
 
-  <!-- Open Graph (OG) for Social Media -->
-  <meta property="og:title" content="MK71 DEVELOPMENT - Web Design & Development Services" />
-  <meta property="og:description" content="Specialists in responsive websites, SEO, branding, and custom digital solutions." />
-  <meta property="og:image" content="./images/Untitled.png" />
-  <meta property="og:url" content="https://your-website-url.com" />
-  <meta property="og:type" content="website" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="MK71 DEVELOPMENT - Web Design & Development Services"
+    />
+    <meta
+      property="og:description"
+      content="Specialists in responsive websites, SEO, branding, and custom digital solutions."
+    />
+    <meta property="og:image" content="./images/Untitled.png" />
+    <meta property="og:url" content="https://your-website-url.com" />
+    <meta property="og:type" content="website" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MK71 DEVELOPMENT - Web Design & Development Services" />
-  <meta name="twitter:description" content="Bringing your digital ideas to life with custom websites and professional services." />
-  <meta name="twitter:image" content="./images/Untitled.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MK71 DEVELOPMENT - Web Design & Development Services"
+    />
+    <meta
+      name="twitter:description"
+      content="Bringing your digital ideas to life with custom websites and professional services."
+    />
+    <meta name="twitter:image" content="./images/Untitled.png" />
 
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Fonts & icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="./css/css.css" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="./css/css.css" />
+    <style>
+      /* Animated background canvas */
+      #background-anim {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #0d0d0d;
+      }
+    </style>
+  </head>
 
+  <body>
+    <!-- Page transition overlay -->
+    <div class="page-transition" id="page-transition"></div>
 
- 
+    <!-- Animated background -->
 
+    <canvas id="background-anim"></canvas>
+    <!-- Header <div id="background-anim" aria-hidden="true"></div>
+-->
+    <header class="header">
+      <div class="header-left">
+        <img src="./images/Untitled.png" alt="MK71 logo" class="logo" />
+      </div>
 
-</head>
+      <nav class="header-right">
+        <a href="./index.html" title="Home" class="btn-contact"
+          ><i class="fa fa-home"></i> Home</a
+        >
+        <a href="./contactus.html" title="Get in touch"
+          ><i class="fa fa-phone"></i> Contact</a
+        >
+      </nav>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="header-left">
-      <img src="./images/Untitled.png" alt="logo" width="539" height="69" />
-     
-    </div>
-    <nav class="header-right">   <a href="./contactus.html" title="Get in touch"><i class="fa fa-phone"></i> Contact</a>
-     
-    </nav>
-
-<body>
-
-    
-
-  </header>
-
-  <main>
-    <div class="homeDiv">
-  
-      <section class="intro">
-        <h1>Welcome To MK71 DEVELOPMENT</h1>
-        <p>At MK71 DEVELOPMENT, we specialize in bringing your digital ideas to life. Whether you're starting a personal blog, launching an online store, or creating a custom business solution, we’re here to turn your vision into reality with modern, user-friendly web solutions.</p>
-      </section>
-  
-      <section class="info">
-        <h1>What We Offer</h1>
-        <ul>
-          <li><strong>Web Design:</strong> Visually stunning, responsive, and user-friendly designs that reflect your brand and engage your audience.</li>
-          <li><strong>Website Development:</strong> We build from the ground up or improve existing sites using the latest technologies like HTML, CSS, JavaScript, and frameworks.</li>
-          <li><strong>SEO (Search Engine Optimization):</strong> Optimizing your site so it appears higher in search engine results, helping more people discover your business.</li>
-          <li><strong>Maintenance & Support:</strong> Continuous updates, backups, and troubleshooting to keep your site secure and running smoothly.</li>
-          <li><strong>Custom Features:</strong> Need a contact form, booking system, or shopping cart? We can build it for you.</li>
-        </ul>
-      </section>
-  
-      <section class="OurServices">
-        <h1>Our Services</h1>
-        <p>We provide a range of creative and technical services tailored to your goals:</p>
-        <ul>
-          <li><strong>Branding & Logo Design:</strong> Build a professional image with a memorable logo and brand identity that sets you apart.</li>
-          <li><strong>E-Commerce Solutions:</strong> Sell your products online with secure, scalable, and user-friendly online stores.</li>
-          <li><strong>Portfolio Websites:</strong> Showcase your work and talents with elegant, organized layouts perfect for photographers, designers, and freelancers.</li>
-          <li><strong>Landing Pages:</strong> Maximize conversions with one-page websites designed for marketing campaigns and promotions.</li>
-          <li><strong>Business Websites:</strong> Help your customers find you online with informative, professional websites that highlight your services and contact info.</li>
-          <li><strong>Blog Integration:</strong> Share your ideas or news with easy-to-manage blogging tools.</li>
-          <li><strong>Performance Optimization:</strong> Speed up your site to provide a smoother experience for all users, even on mobile and slower connections.</li>
-          <li><strong>Consultation & Training:</strong> Not sure where to start? We guide you through the process and even train you on how to update and manage your site.</li>
-        </ul>
-        <p><strong>Why Choose Us?</strong> We focus on results, simplicity, and long-term partnerships. You’re not just getting a website—you’re getting a partner in your online journey. Let’s build something amazing together!</p>
-      </section>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513403172855710"
-     crossorigin="anonymous"></script>
-
-      <section class="designProcess">
-        <h1>Our Development Process</h1>
-  
-        <p><strong>1. Identify the Problem or Purpose:</strong><br>
-        Every successful project begins with a goal. Whether it's a business need, a personal passion, or an online service, we take time to understand exactly what your website should achieve.</p>
-  
-        <p><strong>2. Conduct In-Depth Research:</strong><br>
-        We research your audience and competitors to find out what works and what doesn’t. This helps us create a site that’s both effective and unique.</p>
-  
-        <p><strong>3. Define Features and Functionality:</strong><br>
-        Before designing anything, we list the features your site will need—like a navigation menu, image gallery, forms, or blog section.</p>
-  
-        <p><strong>4. Sketch the Design and Map the User Journey:</strong><br>
-        Using rough sketches or digital wireframes, we plan the layout of each page to ensure easy navigation and a great experience.</p>
-  
-        <p><strong>5. Create a Prototype:</strong><br>
-        A working model of your site helps us fine-tune the layout and features before final development.</p>
-  
-        <p><strong>6. Start Building the Application:</strong><br>
-        We use modern tools and code to bring your vision to life, keeping you updated every step of the way.</p>
-  
-        <p><strong>7. Test and Validate Thoroughly:</strong><br>
-        We test everything to ensure it works perfectly across devices, browsers, and screen sizes.</p>
-  
-        <p><strong>8. Deploy the App to a Live Environment:</strong><br>
-        After testing, your site goes live! We also offer long-term support and updates.</p>
-      </section>
-      <section class="services">
-        <h1>Additional Services</h1>
-        <div class="service-grid">
-          <div class="card">
-            <h3>Logo & Branding</h3>
-            <p>We help you create a consistent, recognizable identity for your business or brand.</p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 class="glow">MK71 DEVELOPMENT</h1>
+            <p class="lead">From concept to code. From dream to device.</p>
+            <a href="./contactus.html" class="cta">Start a Project</a>
           </div>
-          <div class="card">
-            <h3>E-Commerce Sites</h3>
-            <p>Start selling online with beautiful, easy-to-use online stores powered by secure platforms.</p>
-          </div>
-          <div class="card">
-            <h3>Performance Boosting</h3>
-            <p>Slow website? We’ll optimize speed and performance to retain visitors.</p>
-          </div>
-          <div class="card">
-            <h3>Training & Support</h3>
-            <p>We train you to update and manage your site or app with confidence.</p>
+
+          <div class="hero-3d" id="hero-3d">
+            <div class="cube" id="cube">
+              <div class="face face-front">Web</div>
+              <div class="face face-back">Mobile</div>
+              <div class="face face-right">Apps</div>
+              <div class="face face-left">SEO</div>
+              <div class="face face-top">Design</div>
+              <div class="face face-bottom">Support</div>
+            </div>
           </div>
         </div>
       </section>
 
-      
-
-      <section class="whyUs">  
-        <a href="contactus.html" class="btn">Get In Touch</a>
+      <!-- Services Section -->
+      <section class="OurServices">
+        <h2 class="glow" style="text-align: center">Our Services</h2>
+        <div class="service-grid">
+          <div class="card">Branding & Logo Design</div>
+          <div class="card">E-Commerce Solutions</div>
+          <div class="card">Portfolio Websites</div>
+          <div class="card">Landing Pages</div>
+          <div class="card">Business Websites</div>
+          <div class="card">Website Redesign</div>
+        </div>
       </section>
 
-     
-    </div>
-  </main>
+      <!-- Skills Section -->
+      <section class="skills">
+  <h2>What We Offer</h2>
+  <div class="skills-scroll">
 
-  <footer>
-    <div class="footer-content">
-      <img src="./images/Untitled.png" alt="logo" width="100" height="19" />
-      <div class="socials">
-        <a href="#" class="fa fa-facebook" title="Facebook"></a>
-        <a href="#" class="fa fa-twitter" title="Twitter"></a>
-        <a href="#" class="fa fa-youtube" title="YouTube"></a>
-        <a href="#" class="fa fa-instagram" title="Instagram"></a>
+    <div class="skill-card">
+      
+      <div class="skill-front">React Native</div>
+      <div class="skill-back">
+      <img src="./images/ReactnativeLogo.png" alt="React Native logo" />
+        
+        <p>
+          Building cross‑platform mobile apps with React Native, delivering native performance and a seamless user experience on both iOS and Android from a single codebase.
+        </p>
       </div>
     </div>
-  </footer>
-</body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513403172855710"
-     crossorigin="anonymous"></script>
-<!-- idk -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5513403172855710"
-     data-ad-slot="1089467767"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
+    <div class="skill-card">
+      <div class="skill-front">Web Design</div>
+     
+      <div class="skill-back">
+         <img src="./images/webdes.jpeg" alt="Web Design logo" />
+        <p>
+          Crafting responsive, visually striking user interfaces that align perfectly with your brand, ensuring every interaction is intuitive, engaging, and memorable.
+        </p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-front">Website Development</div>
+      <div class="skill-back">
+      <img src="./images/html.png" alt="HTML logo" />
+        <p>
+          Developing fast, secure, and maintainable websites that protect your data, perform flawlessly, and scale effortlessly as your business grows.
+        </p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-front">SEO</div>
+      <div class="skill-back">
+      <img src="./images/SEO.jpeg" alt="SEO logo" />
+        <p>
+          Implementing targeted SEO strategies to boost search rankings, attract the right audience, and expand your brand’s online reach.
+        </p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-front">Android Studio (Kotlin)</div>
+      <div class="skill-back">
+      <img src="./images/Kotlin.jpeg" alt="Kotlin logo" />
+        <p>
+          Creating secure, efficient native Android applications in Kotlin, designed for smooth performance and tailored to your unique requirements.
+        </p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-front">UX/UI Principles</div>
+      <div class="skill-back">
+      <img src="./images/UXUI.png" alt="UX/UI" />
+        <p>
+          Applying proven UX/UI principles to design interfaces that are visually appealing, easy to navigate, and deliver a seamless user journey.
+        </p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-front">Java (NetBeans)</div>
+      <div class="skill-back">
+      <img src="./images/java.png" alt="Java logo" />
+        <p>
+          Engineering robust, object‑oriented Java applications in NetBeans IDE, built for reliability, scalability, and long‑term maintainability.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <!-- Why Us -->
+      <section class="whyUs">
+        <h2 class="glow">Why Choose Us?</h2>
+        <p>
+          We combine creativity, technology, and strategy to bring your digital
+          ideas to life. Our services are tailored for startups, businesses, and
+          individuals looking to grow online.
+        </p>
+        <a href="contactus.html" class="btn">Let’s Talk</a>
+      </section>
+
+     <section class="DesPro">
+  <h2 class="glow">Our Design & Development Process</h2>
+  <div class="process-flow">
+
+    <div class="process-stage">
+      <h3>1. Discovery & Research</h3>
+      <p>
+        Every project begins with understanding your vision, goals, and audience. 
+        We explore your brand identity, study competitors, and gather market insights 
+        to ensure our design and development decisions are grounded in strategy.
+      </p>
+    </div>
+
+    <div class="process-stage">
+      <h3>2. Planning & Strategy</h3>
+      <p>
+        We define the scope, set clear objectives, and create a detailed roadmap. 
+        This stage aligns creative direction with technical requirements, ensuring 
+        timelines, budgets, and deliverables are realistic and achievable.
+      </p>
+    </div>
+
+    <div class="process-stage">
+      <h3>3. Wireframing & UX Architecture</h3>
+      <p>
+        Before visuals, we focus on structure. We map user journeys, create wireframes, 
+        and establish intuitive navigation flows that make your website or app easy to use 
+        and enjoyable from the first interaction.
+      </p>
+    </div>
+
+    <div class="process-stage">
+      <h3>4. Visual Design</h3>
+      <p>
+        We bring the experience to life with pixel‑perfect layouts, typography, and 
+        color palettes that reflect your brand’s personality. Every element is crafted 
+        to be visually engaging while supporting usability and accessibility.
+      </p>
+    </div>
+
+    <div class="process-stage">
+      <h3>5. Development</h3>
+      <p>
+        Using modern frameworks and best practices, we build responsive, secure, and 
+        high‑performance websites and apps. Our code is clean, scalable, and optimized 
+        for speed across all devices and platforms.
+      </p>
+    </div>
+
+    <div class="process-stage">
+      <h3>6. Testing & Quality Assurance</h3>
+      <p>
+        We rigorously test functionality, performance, and compatibility across browsers 
+        and devices. Bugs are fixed, load times are optimized, and every detail is refined 
+        before launch.
+      </p>
+    </div>
+
+    <div class="process-stage">
+      <h3>7. Launch & Ongoing Support</h3>
+      <p>
+        Once live, we monitor performance, provide updates, and offer ongoing support. 
+        We ensure your digital product continues to evolve, adapt, and deliver value 
+        long after launch.
+      </p>
+    </div>
+
+  </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <img
+          src="./images/Untitled.png"
+          alt="MK71 small logo"
+          class="logo-sm"
+        />
+        <div class="socials">
+          <a href="#" class="fa fa-facebook" title="Facebook"></a>
+          <a href="#" class="fa fa-twitter" title="Twitter"></a>
+          <a href="#" class="fa fa-youtube" title="YouTube"></a>
+          <a href="#" class="fa fa-instagram" title="Instagram"></a>
+        </div>
+        <div class="copyright">
+          &copy; 2025 MK71 DEVELOPMENT. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513403172855710"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS: background parallax & cube animation -->
+    <script>
+      (function () {
+        const bg = document.getElementById("background-anim");
+        const hero3d = document.getElementById("hero-3d");
+        const cube = document.getElementById("cube");
+
+        document.addEventListener("mousemove", (e) => {
+          const w = window.innerWidth;
+          const h = window.innerHeight;
+          const x = (e.clientX - w / 2) / (w / 2);
+          const y = (e.clientY - h / 2) / (h / 2);
+
+          bg.style.transform = `translate(${x * -20}px, ${y * -20}px)`;
+          if (hero3d) {
+            hero3d.style.transform = `translate(${x * 8}px, ${y * 8}px)`;
+            cube.style.transform = `rotateX(${y * 12}deg) rotateY(${
+              x * 20
+            }deg)`;
+          }
+        });
+
+        let timeout;
+        function startAutoSpin() {
+          let angle = 0;
+          timeout = setInterval(() => {
+            angle += 0.6;
+            cube.style.transform = `rotateX(${
+              angle / 3
+            }deg) rotateY(${angle}deg)`;
+          }, 40);
+        }
+        startAutoSpin();
+
+        document.addEventListener("mousemove", () => {
+          clearInterval(timeout);
+          clearTimeout(window._restartSpin);
+          window._restartSpin = setTimeout(startAutoSpin, 3000);
+        });
+      })();
+    </script>
+
+    <!-- Page transitions -->
+    <script>
+      const transition = document.getElementById("page-transition");
+
+      window.addEventListener("DOMContentLoaded", () => {
+        transition.classList.remove("active");
+      });
+
+      document.querySelectorAll("a").forEach((link) => {
+        if (link.hostname === window.location.hostname) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+            transition.classList.add("active");
+            setTimeout(() => {
+              window.location.href = href;
+            }, 500);
+          });
+        }
+      });
+      //bg
+      const canvas = document.getElementById("background-anim");
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.radius = Math.random() * 3 + 1;
+          this.color = "rgba(59, 5, 92, 0.7)";
+          this.speedX = (Math.random() - 0.5) * 1.2;
+          this.speedY = (Math.random() - 0.5) * 1.2;
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        }
+      }
+
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < 80; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p) => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animate);
+      }
+
+      initParticles();
+      animate();
+    </script>
+  </body>
 </html>
-
-
-

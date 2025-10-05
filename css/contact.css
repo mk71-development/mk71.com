@@ -1,0 +1,209 @@
+@import url('./css.css'); /* pulls in your main theme */
+
+/* Hero Section */
+.contact-hero {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.contact-hero .glow {
+  font-size: 2.8rem;
+  text-shadow: 0 0 10px rgba(68, 0, 255, 0.7),
+               0 0 20px rgba(25, 0, 255, 0.5);
+}
+
+.contact-hero .lead {
+  margin-top: 8px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Contact Info */
+.contact-info {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 24px;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-6px) rotateX(3deg);
+}
+
+.contact-info h2 {
+  margin-bottom: 12px;
+  color: #1900ff;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.contact-info i {
+  color:  #1900ff;
+  margin-right: 8px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-form form {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+  transform-style: preserve-3d;
+  transition: transform 0.25s ease;
+}
+
+.contact-form form:hover {
+  transform: translateY(-6px) rotateX(3deg);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.4);
+  color: var(--white);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color:  #1900ff;
+  box-shadow: 0 0 12px rgba(0,224,255,0.4);
+}
+
+button.cta {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00e0ff, #6b39ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.cta:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,224,255,0.4);
+}
+
+/* FAQ Section */
+.faq details {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq details:hover {
+  background: rgba(0,224,255,0.05);
+}
+
+.faq summary {
+  font-weight: bold;
+  color:  #1900ff;
+  outline: none;
+}
+
+.faq p {
+  margin-top: 10px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* Map */
+iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+}
+
+/* Page Transition */
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition.active {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  padding: 24px 36px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.2), transparent);
+}
+
+.footer-content {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--white);
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  background:  #1900ff;
+  transform: scale(1.1);
+  color: #000;
+}
